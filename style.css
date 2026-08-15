@@ -678,8 +678,8 @@ textarea {
     }
 
     .portrait img {
-        width: min(90%, 360px);
-        max-height: 92%;
+        width: min(90%, 260px);
+        max-height: 80%;
     }
 
     .projects,
