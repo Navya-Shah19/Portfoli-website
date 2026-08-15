@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Projects | Navya Shah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">N</span><span>Navya
+                Shah</span></a><button class="menu-btn" id="menuBtn" aria-label="Open navigation"><span
+                class="menu-lines"></span></button></header>
+    <div class="drawer-backdrop" id="backdrop"></div>
+    <aside class="drawer" id="drawer">
+        <div class="drawer-head"><strong>Menu</strong><button class="close-btn" id="closeBtn">×</button></div>
+        <nav><a href="index.html">Home <span>→</span></a><a href="intro.html">About & Skills <span>→</span></a><a
+                href="projects.html">Projects <span>→</span></a><a href="contact.html">Contact <span>→</span></a></nav>
+        <div class="drawer-note">Built as a personal portfolio while learning web development.</div>
+    </aside>
+    <main>
+        <section class="section page-hero"><span class="kicker">02 / Projects</span>
+            <h1>Projects I've <span class="italic">worked on.</span></h1>
+            <p class="page-intro">Not everything here is perfect — that's kind of the point. These projects show what
+                I've been learning.</p>
+        </section>
+        <section class="section">
+            <div class="projects">
+                <article class="card project">
+                    <div class="project-image"><strong>Scan'N'Dine</strong></div><span class="tag">TEAM PROJECT</span>
+                    <h3>QR Cafe Ordering System</h3>
+                    <p>A cafe web app where customers scan a table QR, browse the menu, add items to a cart, place an
+                        order and track its status.</p>
+                    <div class="skills"><span class="skill">React.js</span><span class="skill">Django</span><span
+                            class="skill">REST API</span></div>
+                </article>
+                <article class="card project">
+                    <div class="project-image p2"><strong>ESP32 Smart Car</strong></div><span class="tag">INDIVIDUAL
+                        PROJECT</span>
+                    <h3>IoT Smart Car</h3>
+                    <p>A hands-on hardware project using an ESP32. It helped me understand microcontrollers, programming
+                        and basic IoT concepts.</p>
+                    <div class="skills"><span class="skill">ESP32</span><span class="skill">Arduino</span><span
+                            class="skill">C/C++</span></div>
+                </article>
+                <article class="card project">
+                    <div class="project-image p3"><strong>CrackCode</strong></div><span class="tag">TEAM PROJECT</span>
+                    <h3>Interactive Quiz App</h3>
+                    <p>A quiz application with registration, login, questions, evaluation, scores and leaderboard
+                        functionality.</p>
+                    <div class="skills"><span class="skill">Flask</span><span class="skill">SQLite</span><span
+                            class="skill">Bootstrap</span></div>
+                </article>
+            </div>
+        </section>
+        <section class="section">
+            <div class="card about-card"><span class="kicker">What these taught me</span>
+                <h2 style="font-size:36px;letter-spacing:-.04em;margin:18px 0 10px">Build, debug, search, fix. 🔧</h2>
+                <p>Working on projects taught me that development isn't just writing code. A lot of it is reading
+                    errors, checking documentation, trying different approaches and working with teammates.</p>
+            </div>
+        </section>
+    </main>
+    <div class="next">
+        <div><small>Next</small><strong>Contact</strong></div><a href="contact.html">Get in touch →</a>
+    </div>
+    <footer class="footer">© 2026 Navya Shah · Built while learning.</footer>
+    <script>const b = document.getElementById("menuBtn"), d = document.getElementById("drawer"), x = document.getElementById("backdrop"), c = document.getElementById("closeBtn"); function m(o) { d.classList.toggle("open", o); x.classList.toggle("open", o) } b.onclick = () => m(!d.classList.contains("open")); c.onclick = () => m(false); x.onclick = () => m(false); document.querySelectorAll(".drawer a").forEach(a => a.onclick = () => m(false)); document.addEventListener("keydown", e => { if (e.key === "Escape") m(false) });</script>
+</body>
+
+</html>

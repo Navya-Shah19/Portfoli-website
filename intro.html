@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>About & Skills | Navya Shah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">N</span><span>Navya
+                Shah</span></a><button class="menu-btn" id="menuBtn" aria-label="Open navigation"><span
+                class="menu-lines"></span></button></header>
+    <div class="drawer-backdrop" id="backdrop"></div>
+    <aside class="drawer" id="drawer">
+        <div class="drawer-head"><strong>Menu</strong><button class="close-btn" id="closeBtn">×</button></div>
+        <nav><a href="index.html">Home <span>→</span></a><a href="intro.html">About & Skills <span>→</span></a><a
+                href="projects.html">Projects <span>→</span></a><a href="contact.html">Contact <span>→</span></a></nav>
+        <div class="drawer-note">Built as a personal portfolio while learning web development.</div>
+    </aside>
+    <main>
+        <section class="section page-hero"><span class="kicker">01 / About & Skills</span>
+            <h1>What I know<br><span class="italic">& what I'm learning.</span></h1>
+            <p class="page-intro">A realistic snapshot of the technologies and skills I've worked with so far.</p>
+        </section>
+        <section class="section">
+            <div class="card about-card">
+                <h2 class="section-title">About <span class="italic">me.</span></h2>
+                <p style="margin-top:17px">I'm a passionate and curious tech enthusiast interested in web development
+                    and programming. I like learning through projects, experimenting with new technologies and solving
+                    problems when things don't work the first time.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-head"><span class="kicker">My toolbox</span>
+                <h2 class="section-title">Skills, <span class="italic">so far.</span></h2>
+            </div>
+            <div class="card about-card">
+                <div class="skill-grid" style="margin-top:0">
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+                        <div class="skills"><span class="skill">Python</span><span class="skill">JavaScript</span><span
+                                class="skill">HTML</span><span class="skill">CSS</span></div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Frameworks</h3>
+                        <div class="skills"><span class="skill">React.js</span><span class="skill">Django</span><span
+                                class="skill">Flask</span></div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Databases</h3>
+                        <div class="skills"><span class="skill">MongoDB</span><span class="skill">MongoDB
+                                Compass</span><span class="skill">SQLite</span><span class="skill">MySQL</span></div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Tools & concepts</h3>
+                        <div class="skills"><span class="skill">Git</span><span class="skill">GitHub</span><span
+                                class="skill">REST APIs</span><span class="skill">JSON</span><span
+                                class="skill">CRUD</span><span class="skill">React Router</span></div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Soft skills</h3>
+                        <div class="skills"><span class="skill">Problem Solving</span><span
+                                class="skill">Teamwork</span><span class="skill">Quick Learning</span><span
+                                class="skill">Communication</span></div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Currently learning</h3>
+                        <div class="skills"><span class="skill">Better UI/UX</span><span class="skill">API
+                                integration</span><span class="skill">Full-stack development</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="next">
+        <div><small>Next</small><strong>Projects</strong></div><a href="projects.html">See projects →</a>
+    </div>
+    <footer class="footer">© 2026 Navya Shah · Built while learning.</footer>
+    <script>const b = document.getElementById("menuBtn"), d = document.getElementById("drawer"), x = document.getElementById("backdrop"), c = document.getElementById("closeBtn"); function m(o) { d.classList.toggle("open", o); x.classList.toggle("open", o) } b.onclick = () => m(!d.classList.contains("open")); c.onclick = () => m(false); x.onclick = () => m(false); document.querySelectorAll(".drawer a").forEach(a => a.onclick = () => m(false)); document.addEventListener("keydown", e => { if (e.key === "Escape") m(false) });</script>
+</body>
+
+</html>

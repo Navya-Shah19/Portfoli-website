@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Navya Shah | Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">N</span><span>Navya
+                Shah</span></a><button class="menu-btn" id="menuBtn" aria-label="Open navigation"><span
+                class="menu-lines"></span></button></header>
+    <div class="drawer-backdrop" id="backdrop"></div>
+    <aside class="drawer" id="drawer">
+        <div class="drawer-head"><strong>Menu</strong><button class="close-btn" id="closeBtn">×</button></div>
+        <nav><a href="index.html">Home <span>→</span></a><a href="intro.html">About & Skills <span>→</span></a><a
+                href="projects.html">Projects <span>→</span></a><a href="contact.html">Contact <span>→</span></a></nav>
+        <div class="drawer-note">Built as a personal portfolio while learning web development.</div>
+    </aside>
+    <main>
+       <section class="section reveal">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span> Open to opportunities</span>
+      <h1>Building digital ideas with <span class="display-italic">code.</span></h1>
+      <p class="hero-copy">Hi, I'm Navya — a developer and tech enthusiast who enjoys turning ideas into practical web experiences. I work with React, JavaScript, Python and Django, and I learn best by building.</p>
+      <div class="actions">
+        <a class="btn primary" href="projects.html">View my work ↗</a>
+        <a class="btn" href="contact.html">Let's connect</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="portrait"><img src="Navya.png" alt="Navya"></div>
+    </div>
+  </div>
+</section>
+        <section class="section">
+            <section class="section reveal">
+  <div class="section-head">
+    <div><span class="eyebrow">01 / About</span><h2 class="section-title">A little <span class="display-italic">about me.</span></h2></div>
+    <p class="section-sub">Curious about technology, focused on practical projects, and always looking for the next thing to learn.</p>
+  </div>
+  <div class="about-grid">
+    <div class="card quote"><p>"I enjoy learning by building things that actually work."</p></div>
+    <div class="card about-card">
+      <p>I am a passionate and curious tech enthusiast with a strong interest in web development and programming. I like solving problems, experimenting with new tools, and turning concepts into working projects.</p>
+      <div class="skill-grid">
+        <div class="skill-group"><h3>Development</h3><div class="chips"><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">React.js</span><span class="chip">Django</span></div></div>
+        <div class="skill-group"><h3>Data & Tools</h3><div class="chips"><span class="chip">MongoDB</span><span class="chip">SQLite</span><span class="chip">Git</span><span class="chip">VS Code</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="section">
+            <div class="section-head">
+    <div><span class="eyebrow">02 / Selected work</span><h2 class="section-title">Things I've <span class="display-italic">built.</span></h2></div>
+    <p class="section-sub">A few projects that helped me practice full-stack development, IoT and collaborative problem solving.</p>
+  </div>
+            <div class="projects">
+                <article class="card project">
+                    <div class="project-image"><strong>Scan'N'Dine</strong></div><span class="tag">TEAM PROJECT</span>
+                    <h3>QR Cafe Ordering</h3>
+                    <p>A QR-based cafe menu and ordering system with cart, orders and order tracking.</p>
+                    <div class="skills"><span class="skill">React</span><span class="skill">Django</span><span
+                            class="skill">REST API</span></div>
+                </article>
+                <article class="card project">
+                    <div class="project-image p2"><strong>ESP32 Car</strong></div><span class="tag">INDIVIDUAL
+                        PROJECT</span>
+                    <h3>IoT Smart Car</h3>
+                    <p>A smart car project combining an ESP32, programming and basic electronics.</p>
+                    <div class="skills"><span class="skill">ESP32</span><span class="skill">IoT</span><span
+                            class="skill">C/C++</span></div>
+                </article>
+                <article class="card project">
+                    <div class="project-image p3"><strong>CrackCode</strong></div><span class="tag">TEAM PROJECT</span>
+                    <h3>Quiz Application</h3>
+                    <p>An interactive quiz app with authentication, scoring and a leaderboard.</p>
+                    <div class="skills"><span class="skill">Flask</span><span class="skill">SQLite</span></div>
+                </article>
+            </div>
+            <div class="actions"><a class="btn" href="projects.html">View project details →</a></div>
+        </section>
+        <section class="section">
+            <div class="contact-grid">
+                <div class="card contact-copy"><span class="kicker">What's next?</span>
+                    <h2>Still learning. <span class="italic">Still building.</span></h2>
+                    <p>I'm looking forward to working on more real-world projects, improving my skills and learning from
+                        people around me.</p>
+                    <div class="contact-links"><a href="intro.html">See my skills →</a><a href="contact.html">Get in
+                            touch →</a></div>
+                </div>
+                <div class="card form-card">
+                    <h2 style="font-size:30px;letter-spacing:-.04em;margin-bottom:8px">Let's connect.</h2>
+                    <p style="color:var(--muted);font-size:14px">Have an opportunity or just want to talk tech?</p>
+                    <div class="actions"><a class="btn primary" href="contact.html">Contact me →</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">© 2026 Navya Shah · Built while learning.</footer>
+    <script>const b = document.getElementById("menuBtn"), d = document.getElementById("drawer"), x = document.getElementById("backdrop"), c = document.getElementById("closeBtn"); function m(o) { d.classList.toggle("open", o); x.classList.toggle("open", o) } b.onclick = () => m(!d.classList.contains("open")); c.onclick = () => m(false); x.onclick = () => m(false); document.querySelectorAll(".drawer a").forEach(a => a.onclick = () => m(false)); document.addEventListener("keydown", e => { if (e.key === "Escape") m(false) });</script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact | Navya Shah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">N</span><span>Navya
+                Shah</span></a><button class="menu-btn" id="menuBtn" aria-label="Open navigation"><span
+                class="menu-lines"></span></button></header>
+    <div class="drawer-backdrop" id="backdrop"></div>
+    <aside class="drawer" id="drawer">
+        <div class="drawer-head"><strong>Menu</strong><button class="close-btn" id="closeBtn">×</button></div>
+        <nav><a href="index.html">Home <span>→</span></a><a href="intro.html">About & Skills <span>→</span></a><a
+                href="projects.html">Projects <span>→</span></a><a href="contact.html">Contact <span>→</span></a></nav>
+        <div class="drawer-note">Built as a personal portfolio while learning web development.</div>
+    </aside>
+    <main>
+        <section class="section page-hero"><span class="kicker">03 / Contact</span>
+            <h1>Let's <span class="italic">talk.</span></h1>
+            <p class="page-intro">Have a project, internship opportunity or just want to connect? Feel free to send a
+                message.</p>
+        </section>
+        <section class="section">
+            <div class="contact-grid">
+                <div class="card contact-copy"><span class="kicker">Say hello</span>
+                    <h2>I'm open to <span class="italic">opportunities.</span></h2>
+                    <p>I'm always happy to learn about interesting projects and meet people who are into technology.</p>
+                    <div class="contact-links"><a href="projects.html">View my projects →</a><a href="intro.html">View
+                            my skills →</a></div>
+                </div>
+                <div class="card form-card">
+                    <form action="https://formspree.io/f/mppalklg" method="POST">
+                        <div class="form-row">
+                            <div class="field"><label>Name</label><input name="name" required></div>
+                            <div class="field"><label>Email</label><input name="email" type="email" required></div>
+                        </div>
+                        <div class="field"><label>Phone</label><input name="phone" type="tel"></div>
+                        <div class="field"><label>What is this about?</label><input name="enquiry"
+                                placeholder="Project, internship, collaboration..."></div>
+                        <div class="field"><label>Message</label><textarea name="message"
+                                placeholder="Write your message..."></textarea></div><button class="btn primary"
+                            type="submit">Send message →</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="next">
+        <div><small>Back to</small><strong>Home</strong></div><a href="index.html">Go home →</a>
+    </div>
+    <footer class="footer">© 2026 Navya Shah · Built while learning.</footer>
+    <script>const b = document.getElementById("menuBtn"), d = document.getElementById("drawer"), x = document.getElementById("backdrop"), c = document.getElementById("closeBtn"); function m(o) { d.classList.toggle("open", o); x.classList.toggle("open", o) } b.onclick = () => m(!d.classList.contains("open")); c.onclick = () => m(false); x.onclick = () => m(false); document.querySelectorAll(".drawer a").forEach(a => a.onclick = () => m(false)); document.addEventListener("keydown", e => { if (e.key === "Escape") m(false) });</script>
+</body>
+
+</html>
