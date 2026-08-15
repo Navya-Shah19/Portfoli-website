@@ -680,6 +680,7 @@ textarea {
     .portrait img {
         width: min(90%, 260px);
         max-height: 80%;
+        margin:auto;
     }
 
     .projects,
