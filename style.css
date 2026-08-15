@@ -115,6 +115,13 @@ textarea {
 .menu-lines:after {
     top: 6px
 }
+.portrait{
+    position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;
+}
+.portrait img{
+    width:min(85%,430px);max-height:90%;object-fit:contain;filter:drop-shadow(0 25px 35px rgba(0,0,0,.22));
+    mix-blend-mode:normal
+}
 
 .drawer-backdrop {
     position: fixed;
@@ -366,8 +373,21 @@ h1 {
     background:rgba(255,255,255,.52);color:#6c6570;font-size:12px;font-weight:700;
     letter-spacing:.08em;text-transform:uppercase
 }
-.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 70px;
+    align-items: center;
+}
 
+.hero-card {
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: #ece6ef;
+    border: 1px solid var(--border);
+}
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -591,70 +611,96 @@ textarea {
     justify-content: center
 }
 
-@media(max-width:850px) {
+@media (max-width: 850px) {
 
-    .hero,
+    .hero-grid,
     .about-grid,
     .contact-grid {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
 
-    .profile-card {
-        max-width: 500px
+    .hero-grid {
+        gap: 40px;
+    }
+
+    .hero-card {
+        min-height: 420px;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
     }
 
     .projects {
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr;
     }
 }
+@media (max-width: 600px) {
 
-@media(max-width:600px) {
     .topbar {
         top: 10px;
-        width: calc(100% - 20px)
+        width: calc(100% - 20px);
     }
 
     .drawer {
         top: 10px;
         right: 10px;
-        width: calc(100% - 20px)
+        width: calc(100% - 20px);
     }
 
     main {
-        padding-top: 70px
+        padding-top: 70px;
     }
 
     .section {
         width: calc(100% - 24px);
         min-height: auto;
-        padding: 55px 0 70px
+        padding: 55px 0 70px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
     }
 
     h1 {
-        font-size: 52px
+        font-size: clamp(42px, 12vw, 52px);
+        word-break: normal;
     }
 
     .hero p,
     .page-intro {
-        font-size: 15px
+        font-size: 15px;
     }
 
-    .profile-card,
-    .profile-card img {
-        min-height: 330px
+    .hero-card {
+        min-height: 350px;
+        width: 100%;
+    }
+
+    .portrait img {
+        width: min(90%, 360px);
+        max-height: 92%;
     }
 
     .projects,
     .skill-grid,
     .form-row {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
 
     .quote {
-        min-height: 220px
+        min-height: 220px;
     }
 
     .next {
-        width: calc(100% - 24px)
+        width: calc(100% - 24px);
+    }
+
+    .actions {
+        gap: 8px;
+    }
+
+    .btn {
+        padding: 10px 15px;
     }
 }

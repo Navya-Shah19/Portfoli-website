@@ -62,9 +62,12 @@
             </div>
         </section>
     </main>
-    <div class="next">
-        <div><small>Next</small><strong>Contact</strong></div><a href="contact.html">Get in touch →</a>
+    <a href="contact.html" class="next">
+    <div>
+        <strong>Contact</strong>
     </div>
+    <span>Get in touch with me →</span>
+</a>
     <footer class="footer">© 2026 Navya Shah · Built while learning.</footer>
     <script>const b = document.getElementById("menuBtn"), d = document.getElementById("drawer"), x = document.getElementById("backdrop"), c = document.getElementById("closeBtn"); function m(o) { d.classList.toggle("open", o); x.classList.toggle("open", o) } b.onclick = () => m(!d.classList.contains("open")); c.onclick = () => m(false); x.onclick = () => m(false); document.querySelectorAll(".drawer a").forEach(a => a.onclick = () => m(false)); document.addEventListener("keydown", e => { if (e.key === "Escape") m(false) });</script>
 </body>

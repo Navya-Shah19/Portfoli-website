@@ -50,9 +50,12 @@
             </div>
         </section>
     </main>
-    <div class="next">
-        <div><small>Back to</small><strong>Home</strong></div><a href="index.html">Go home →</a>
+    <a href="index.html" class="next">
+    <div>
+        <strong>Home</strong>
     </div>
+    <span>Go to home page →</span>
+</a>
     <footer class="footer">© 2026 Navya Shah · Built while learning.</footer>
     <script>const b = document.getElementById("menuBtn"), d = document.getElementById("drawer"), x = document.getElementById("backdrop"), c = document.getElementById("closeBtn"); function m(o) { d.classList.toggle("open", o); x.classList.toggle("open", o) } b.onclick = () => m(!d.classList.contains("open")); c.onclick = () => m(false); x.onclick = () => m(false); document.querySelectorAll(".drawer a").forEach(a => a.onclick = () => m(false)); document.addEventListener("keydown", e => { if (e.key === "Escape") m(false) });</script>
 </body>
